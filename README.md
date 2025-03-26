@@ -36,6 +36,31 @@ This repository contains a signal processing project implemented on the STM32F40
 4. Connect headphones to the audio output jack
 5. Run the MATLAB scripts for visualization and analysis
 
+## Results
+
+### System Setup
+The following image shows a typical real-world setup for the adaptive filter implementation:
+
+![Real-world Setup](images/Image%20of%20typical%20real-world%20setup.jpg)
+
+The setup includes the STM32F407 Discovery board with audio input/output connections for real-time signal processing.
+
+### Filter Performance
+
+#### Adaptation to Broadband Noise
+The following image shows the adaptive filter's performance when cancelling broadband noise:
+
+![Filter Performance with Broadband Noise](images/Filter%20Generated%20in%20Broadband%20Noise.jpg)
+
+The plot demonstrates how the LMS algorithm effectively adapts to reduce broadband noise. The filter coefficients converge to form an appropriate impulse response that minimizes the error between the desired signal and the filtered output.
+
+#### Adaptation to Sinusoidal Noise
+The following image shows the adaptive filter's performance when dealing with sinusoidal noise:
+
+![Filter Performance with Sine Noise](images/Filter%20Generated%20in%20Sine%20Noise.jpg)
+
+The plot demonstrates how the LMS algorithm can effectively identify and cancel periodic noise components. The filter adapts specifically to the frequency characteristics of the sinusoidal interference.
+
 ## Documentation
 - `user_guide.pdf`: Detailed user guide for the development kit
 - `Project2_Group3_Rev2.pdf`: Project report with implementation details and results
@@ -79,6 +104,31 @@ This repository contains a signal processing project implemented on the STM32F40
 3. 构建并上传到STM32F407 Discovery开发板
 4. 将耳机连接到音频输出插孔
 5. 运行MATLAB脚本进行可视化和分析
+
+## 实验结果
+
+### 系统设置
+下图展示了自适应滤波器实现的典型实际设置：
+
+![实际设置](images/Image%20of%20typical%20real-world%20setup.jpg)
+
+该设置包括STM32F407 Discovery开发板，配有音频输入/输出连接，用于实时信号处理。
+
+### 滤波器性能
+
+#### 宽带噪声适应
+下图显示了自适应滤波器在消除宽带噪声时的性能：
+
+![宽带噪声滤波性能](images/Filter%20Generated%20in%20Broadband%20Noise.jpg)
+
+该图表演示了LMS算法如何有效适应并减少宽带噪声。滤波器系数收敛形成适当的脉冲响应，最小化期望信号与滤波输出之间的误差。
+
+#### 正弦噪声适应
+下图显示了自适应滤波器处理正弦噪声时的性能：
+
+![正弦噪声滤波性能](images/Filter%20Generated%20in%20Sine%20Noise.jpg)
+
+该图表演示了LMS算法如何有效识别和消除周期性噪声成分。滤波器专门适应正弦干扰的频率特性。
 
 ## 文档
 - `user_guide.pdf`：开发套件的详细用户指南
