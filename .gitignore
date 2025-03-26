@@ -1,0 +1,67 @@
+# PlatformIO specific
+.pio/
+.pioenvs/
+.piolibdeps/
+.pio/build
+
+# STM32 build outputs
+build/
+Debug/
+Release/
+*.bin
+*.elf
+*.hex
+*.map
+*.lst
+
+# VSCode specific
+.vscode/
+.history/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# MATLAB specific
+*.asv
+*.m~
+*.mex*
+slprj/
+codegen/
+octave-workspace
+
+# Compiled Object files
+*.o
+*.obj
+*.d
+
+# Other IDE files
+.idea/
+*.iml
+.settings/
+.cproject
+.project
+*.launch
+
+# Temporary files and logs
+*.tmp
+*.log
+*.bak
+*.backup
+logs/
+temp/
+tmp/
+
+# Documentation
+doxygen/html
+doxygen/latex
+
+# User-specific files
+*.user
+*.suo
+
+# PlatformIO special files
+lib_ext/ 
